@@ -1,1 +1,54 @@
 @import 'meyer-reset.css';
+
+/* SETUP */
+* {
+    box-sizing: border-box;
+}
+
+/* Font */
+
+@font-face {
+    font-family: Norse-font;
+    src: url(fonts/Norse-Bold.otf);
+  }
+
+/* Layout */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height: 100vh;
+}
+
+/* Left-hand-side */
+
+.sidebar {
+    background-image: url('images/pawel-nolbert-xe-ss5Tg2mo-unsplash.jpg');
+    width: 30vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo-body {
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    font-family: Norse-font, sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.logo,.logo-title
+{
+  display:inline-block;
+  vertical-align: middle;
+  margin-right: -30px;
+}
+
