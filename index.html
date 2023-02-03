@@ -59,13 +59,13 @@
 
                         <p>
                             <label for="user_password">PASSWORD</label>
-                            <input type="password" id="user_password" name="password">
+                            <input type="password" id="user_password" name="password" required>
                             <!-- <span id="pw1_message" style="color: red"></span> -->
                         </p>
 
                         <p>
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password" name="confirm_password">
+                            <input type="password" id="confirm_password" name="confirm_password" required>
                             <!-- <span id="pw2_message" style="color: red"></span> -->
                         </p>
 
@@ -74,8 +74,8 @@
                 </form>
             </div>
             <div class="sign-up">
-                <h1>World</h1>
-                <button type = "submit" onclick='updateMessage() '>Submit</button>  
+                <button class='create' type = "submit" onclick='updateMessage()'>Create Account</button>  
+                <p id="already">Already have an account? <a href="">Log in</a></p>
             </div>
 
         </div>

@@ -101,15 +101,24 @@ body {
 
 input {
     width: 100%;
-    border: 1px solid black;
+    border: 1px solid rgba(108, 108, 108, 0.576);
     margin-bottom: 3%;
     border-radius: 3px;
     padding: 4px;
+    -webkit-transition: 0.2s;
+    transition: 0.5s;
 }
 
 input:focus {
-    outline: 2px solid rgb(71, 191, 235);
+    outline-style: solid;
+    border: 1px solid rgb(45, 94, 201);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
+input:visited {
+    border: 1px solid rgba(108, 108, 108, 0.576);
+}
+
 
 form {
     display: grid;
@@ -140,8 +149,45 @@ form label {
     text-align: center;
 }
 
+/* Sign-up Button */
 
 .sign-up {
     height: 30vh;
     background-color: rgb(237, 241, 242);
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+button.create {
+    color: white;
+    background-color: rgba(0, 83, 119, 0.934);
+    padding: 2% 5%;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: "Roboto", sans-serif;
+}
+
+button.create:hover {
+    cursor: pointer;
+}
+
+#already {
+    padding-top: 3%;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0, 83, 119, 0.934);
+    font-weight: 600;
+}
+
+/*.error {
+    border:2px solid rgb(255, 0, 0);
+  }*/
+
+input:invalid {
+    border: 1px solid red;
 }
