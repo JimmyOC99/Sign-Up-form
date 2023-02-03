@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
 
@@ -30,17 +31,19 @@
                     You <em>know</em> you want to.
                 </p>
             </div>
-            <div class='contact-form'>
+            <div id='contact-form'>
                 <h3>Let's do this!</h3>
                 <form action="" methods="get">
                         <p>
                             <label for="first-name">FIRST NAME</label>
                             <input type="text" id="first-name" name="f-name" placeholder="Fred..."> 
+                            <!-- <span id="first_blank" style="color: red"></span> -->
                         </p>
 
                         <p>
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="l-name" placeholder="Bloggs..."> 
+                            <input type="text" id="last-name" name="l-name" placeholder="Bloggs...">
+                            <!-- <span id="last_blank" style="color: red"></span> -->
                         </p>
                         
                         <p>
@@ -57,17 +60,22 @@
                         <p>
                             <label for="user_password">PASSWORD</label>
                             <input type="password" id="user_password" name="password">
+                            <!-- <span id="pw1_message" style="color: red"></span> -->
                         </p>
 
                         <p>
                             <label for="confirm_password">CONFIRM PASSWORD</label>
                             <input type="password" id="confirm_password" name="confirm_password">
+                            <!-- <span id="pw2_message" style="color: red"></span> -->
                         </p>
+
+                        <span id="update_message" style="color: red"></span>
                         
                 </form>
             </div>
             <div class="sign-up">
                 <h1>World</h1>
+                <button type = "submit" onclick='updateMessage() '>Submit</button>  
             </div>
 
         </div>
